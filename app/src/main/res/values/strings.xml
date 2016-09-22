@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">ZiffiApp</string>
+
+    <string name="home">Home</string>
+    <string name="myaccount">My Account</string>
+    <string name="offers">Offers</string>
+    <string name="MyBookings">My Bookings</string>
+    <string name="Refer">Refer</string>
+    <string name="Notifications">Notifications</string>
+    <string name="HelpCenter">Help Center</string>
+    <string name="Logout">Log Out</string>
+    <string name="title_activity_navigation_"></string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+</resources>

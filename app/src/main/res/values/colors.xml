@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="offblack">#666666</color>
+
+    <color name="pink">#F50057</color>
+    <color name="deam_whit">#fafafa</color>
+    <color name="light_white">#FDFEFE</color>
+    <color name="demwhite">#FFFCFF</color>
+
+    <color name="orange">#FFA500</color>
+    <color name="lime">#00FF00</color>
+    <color name="deawh_line">#C3C3C3</color>
+    <color name="deawh_back">#E5E7E9</color>
+
+    <color name="light_black">#999999</color>
+
+    <color name="backscreen">#e5e5e5</color>
+
+    <color name="ligh_yellow">#FFE13C</color>
+
+</resources>

@@ -1,0 +1,16 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+              android:background="@color/white"
+             tools:context=".Seeservice_pager_MyFragmentData">
+
+
+<ListView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/list_seemore_service"
+    android:divider="@color/white"
+    android:scrollbars="none"
+    android:dividerHeight="0dp"></ListView>
+</LinearLayout>

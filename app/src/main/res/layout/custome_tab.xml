@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    android:layout_height="wrap_content"
+    android:layout_width="wrap_content"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+<TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:textSize="12dp"
+          android:textAlignment="center"
+          android:singleLine="true"
+          android:gravity="center|left"
+          android:id="@+id/tab_tv"/>
+
+    <View
+    android:layout_width="match_parent"
+    android:layout_height="1dp"
+    android:background="@color/deawh_line"/>
+
+</LinearLayout>
+

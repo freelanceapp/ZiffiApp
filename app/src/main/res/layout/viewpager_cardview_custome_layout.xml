@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.rafakob.drawme.DrawMeLinearLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:drawme="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    android:layout_margin="1dp"
+    android:id="@+id/checkBox_check_layout"
+    android:padding="10dp"
+    android:orientation="horizontal"
+    drawme:dm_backColor="#ffffff"
+    drawme:dm_radius="5dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="2"
+            android:gravity="center|left">
+
+<TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/mainidmy"
+    android:text="Bearsed Stylling"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:gravity="left|center"
+            android:orientation="horizontal"
+            android:layout_marginLeft="10dp">
+<ImageView
+    android:layout_width="10dp"
+    android:layout_height="10dp"
+    android:background="@drawable/default_state_price_index_1"/>
+
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/price_rp"
+                android:textColor="@color/black"
+                android:text="170"/>
+
+
+            <ImageView
+                android:layout_width="5dp"
+                android:layout_height="5dp"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/circle_disabled"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="15"
+                android:id="@+id/time_tv"
+                android:layout_marginLeft="5dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="min"
+                android:layout_marginLeft="5dp"/>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="4"
+        android:gravity="center">
+
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/checkBox_check"/>
+    </LinearLayout>
+
+
+
+
+</com.rafakob.drawme.DrawMeLinearLayout>

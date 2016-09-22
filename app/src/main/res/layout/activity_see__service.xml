@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="apporio.com.ziffiapp.See_Service">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/light_white">
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="49dp"
+            android:orientation="horizontal"
+            android:background="@color/icons_8_muted_offWhite">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="5"
+                android:id="@+id/back_service_layout"
+                android:gravity="center|left"
+                >
+                <ImageView
+                android:layout_width="15dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/back_arrow_grey"/>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center|left"
+                android:orientation="vertical"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textColor="@color/icons_8_muted_offWhite_dark"
+                    android:text="Services"/>
+
+                <!--<LinearLayout-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:orientation="horizontal"-->
+                    <!--&gt;-->
+                    <!--<TextView-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:id="@+id/selct_zneder"-->
+                        <!--android:text="For Men"/>-->
+                    <!--<ImageView-->
+                        <!--android:layout_width="13dp"-->
+                        <!--android:layout_marginLeft="15dp"-->
+                        <!--android:layout_height="10dp"-->
+                        <!--android:layout_gravity="bottom"-->
+                        <!--android:background="@drawable/down_arrow"/>-->
+                <!--</LinearLayout>-->
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+        //view pager
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+            <com.astuetz.PagerSlidingTabStrip
+                android:id="@+id/tabs"
+                app:pstsShouldExpand="true"
+                android:background="@color/icons_8_muted_offWhite"
+                app:pstsTextAllCaps="true"
+                android:layout_width="match_parent"
+                app:pstsIndicatorColor="@color/pink"
+                app:pstsDividerColor="@color/icons_8_muted_offWhite"
+                app:pstsUnderlineColor="@color/icons_8_muted_offWhite_dark"
+                app:pstsTabPaddingLeftRight="14dp"
+                app:pstsIndicatorHeight="5dp"
+                android:layout_height="48dp" />
+
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/pickup_viewpager"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white" >
+            </android.support.v4.view.ViewPager> </LinearLayout>
+
+
+            //BOTTOM VIEW
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="49dp"
+                android:layout_gravity="bottom"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="2"
+                    android:orientation="vertical"
+                    android:background="@color/icons_8_muted_offWhite"
+                    android:gravity="center">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAlignment="center"
+                        android:id="@+id/selectedItem_textview"
+                        android:text="0 ITEM"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="SELECTED"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:id="@+id/appointmentime_btn"
+                    android:gravity="center"
+                    android:background="@color/icons_8_muted_offWhite_dark"
+                    ><TextView
+                    android:layout_width="wrap_content"
+                    android:textColor="@color/white"
+                    android:layout_height="wrap_content"
+                    android:text="APPOINTMENT TIME"/>
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+
+
+        </FrameLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

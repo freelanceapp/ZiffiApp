@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:drawme="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/icons_8_muted_offWhite"
+              android:id="@+id/main_id">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="vertical"
+        android:gravity="left|center">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/lis_main_tv"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="5dp"
+        android:text="hai"/>
+
+        <com.rafakob.drawme.DrawMeLinearLayout
+
+                      android:id="@+id/addviewlayout"
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:orientation="vertical"
+                      android:padding="2dp"
+                      drawme:dm_backColor="#ffffff"
+                      drawme:dm_strokeColor="@color/icons_8_muted_offWhite_dark"
+                      drawme:dm_stroke="1dp"
+                      drawme:dm_radius="5dp"/>
+    </LinearLayout>
+
+</LinearLayout>

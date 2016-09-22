@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:drawme="http://schemas.android.com/apk/res-auto"
+    tools:context="apporio.com.ziffiapp.BestSalons">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/icons_8_muted_offWhite">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+            <include layout="@layout/header_everypage_layout"/>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/icons_8_muted_offWhite_dark"/>
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none"
+            android:layout_margin="5dp">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <com.rafakob.drawme.DrawMeLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_margin="1dp"
+        android:orientation="horizontal"
+        android:gravity="center|left"
+        drawme:dm_strokeColor="@color/white"
+        drawme:dm_stroke="1dp"
+        drawme:dm_backColor="@color/demwhite"
+        drawme:dm_radius = "5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center|left">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="Showing salons for Men"/></LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="right|center"
+            android:layout_weight="1">
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/circle_disabled"
+            android:layout_height="10dp"/></LinearLayout>
+    </com.rafakob.drawme.DrawMeLinearLayout>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:layout_marginTop="10dp"
+    android:orientation="vertical">
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@color/icons_8_muted_offWhite"
+        android:dividerHeight="10dp"
+        android:id="@+id/list_offers"></ListView>
+
+</LinearLayout>
+
+
+</LinearLayout>
+
+
+
+        </ScrollView>
+    </LinearLayout>
+</LinearLayout>

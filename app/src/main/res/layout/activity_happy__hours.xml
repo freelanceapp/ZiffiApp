@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:drawme="http://schemas.android.com/apk/res-auto"
+
+    tools:context="apporio.com.ziffiapp.Happy_Hours">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/icons_8_muted_offWhite">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+            <include layout="@layout/header_everypage_layout"/>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/icons_8_muted_offWhite_dark"/>
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none"
+            android:layout_margin="5dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <com.rafakob.drawme.DrawMeLinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_margin="1dp"
+                    android:orientation="horizontal"
+                    drawme:dm_strokeColor="@color/icons_8_muted_offWhite_dark"
+                    drawme:dm_stroke="1dp"
+                    drawme:dm_backColor="@color/white"
+                    drawme:dm_radius = "5dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center|left">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:text="Showing salons and Spas for Men"/></LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:background="@color/white"
+                        android:layout_weight="2">
+
+                        <com.kyleduo.switchbutton.SwitchButton
+                            android:id="@+id/sb_default"
+                            android:layout_width="wrap_content"
+                            drawme:kswAnimationDuration="3"
+                            drawme:kswThumbDrawable="@drawable/check"
+                            drawme:kswBackDrawable="@drawable/toggle_state1"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/man_icon"
+                           drawme:kswTextMarginH="1dp"
+                            drawme:kswThumbWidth="1dp"
+
+                            drawme:kswBackColor="@color/white"
+
+                            />
+
+                    </LinearLayout>
+                </com.rafakob.drawme.DrawMeLinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical">
+                    <ListView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:divider="@color/icons_8_muted_offWhite"
+                        android:dividerHeight="10dp"
+                        android:id="@+id/list_best_happyhours"></ListView>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+
+        </ScrollView>
+    </LinearLayout>
+</LinearLayout>
